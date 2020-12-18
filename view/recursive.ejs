@@ -1,0 +1,36 @@
+<style>
+.tessx {
+    text-align: end;
+    font-size: 12px;
+    font-family: sans-serif;
+    box-shadow: 1px 1px 10px red, 2px 2px 10px green;
+    width: 89%;
+    margin: 56px;
+    margin-left: 90px;
+    color: rgb(210 105 30);
+}
+</style>
+
+<div class="tessx">
+<h3>تابعrecursive چیست</h3>
+
+<h4>این تابع یعنی بازگشتی یعنی اینکه خودشونو  فراخوانی میکنن تا به جواب نهایی بزنن</h1>
+
+<h1> در مثال زیر  میایم یک مقدار ۵ را به تابع میدهیم و میگیم وقتی به صفر رسیدی برنامه رو تمام کن و دیگه ادامه نده در غیر این صورت ادامه بده یعنی اول عدد ۵ را میدهد و سری بعد ۴ و .... تا به ۰ برسد این تابعی که خودش را هر سری صدا میزند را تابع بازگشتی گویم </h1>
+</div>
+
+
+<script>
+
+function recursive(n){
+    if(n < 0){
+        console.log("end count Down")
+        return;
+    }
+    console.log("recursion result =>", n);
+    recursive(n - 1);
+}
+recursive(5)
+</script>
+
+

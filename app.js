@@ -1,7 +1,7 @@
 const express = require('express');
 const app  = express();
 
-const Port = process.env.Port || 7000 ;
+const Port = process.env.Port || 1000 ;
 
 
 app.use('/',require("./Router/Index"))
